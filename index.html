@@ -619,6 +619,7 @@
     @media (max-width: 540px) {
       .hero { padding: 80px 20px 48px; }
       .hero-grid { gap: 24px; }
+      .draw-hint { display: none; }
       .design-asset-wrap { height: 220px; }
       .photo-frame { width: 170px; height: 220px; }
       .hero-name { font-size: 1.6rem; letter-spacing: 1px; }
@@ -721,7 +722,7 @@
       <div class="hero-badge"><span class="badge-dot"></span>Available for Projects</div>
       <h1 class="hero-name">Bobby Wijaya</h1>
       <p class="hero-role">Graphic Designer</p>
-      <p class="hero-desc">I build brands through design that actually drives growth — not just looks good, but connects, holds attention, and performs.</p>
+      <p class="hero-desc">Built to Connect. Designed to Stand Out.</p>
       <div class="hero-actions">
         <a href="#portfolio" class="btn-primary">
           <span>View Work</span>
@@ -778,8 +779,8 @@
       <div class="about-text reveal">
         <p class="section-label">About Me</p>
         <h2 class="section-title">Design is my<br /><span style="color:var(--purple-light)">language.</span></h2>
-        <p>A lot of brands look decent — but they <strong>don't connect</strong>. The visuals are there, but they don't capture attention, hold it, or turn it into results. <strong>That's where I come in.</strong></p>
-        <p>I create design that's visually strong, engaging, and consistent across every touchpoint. Clear visuals, strong direction, and design that <strong>serves a purpose</strong> — so your brand stands out and performs better.</p>
+        <p>A lot of brands look decent, but they <strong>don't connect</strong>. The visuals are there, but they don't capture attention, hold it, or turn it into results. <strong>That's where I come in.</strong></p>
+        <p>I create design that's visually strong, engaging, and consistent across every touchpoint. Clear visuals, strong direction, and design that <strong>serves a purpose</strong>, so your brand stands out and performs better.</p>
         <div class="skills-section">
           <div class="skills-label">Tools &amp; Software</div>
           <div class="skills-toolbar">
@@ -840,7 +841,7 @@
     <div class="portfolio-header reveal">
       <p class="section-label">Portfolio</p>
       <h2 class="section-title">Selected Works</h2>
-      <p class="section-desc" style="margin:0 auto;">Hover a folder to preview — click to explore the full collection.</p>
+      <p class="section-desc" style="margin:0 auto;">Hover a folder to preview. Click to explore the full collection.</p>
     </div>
     <div class="folders-grid">
 
@@ -976,7 +977,7 @@
     <div class="reveal" style="text-align:center;max-width:580px;margin:0 auto 52px;">
       <p class="section-label">What I Do</p>
       <h2 class="section-title">Services I Offer</h2>
-      <p class="section-desc">From concept to final file — I handle the full design process with precision, creativity, and clear communication.</p>
+      <p class="section-desc">From concept to final file. I handle the full design process with precision, creativity, and clear communication.</p>
     </div>
     <div class="services-grid">
       <div class="service-card reveal"><div class="service-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><polygon points="12,2 22,19 2,19" stroke="white" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="13" r="3" stroke="white" stroke-width="1.5"/></svg></div><div class="service-title">Logo &amp; Brand Identity</div><div class="service-desc">Custom logos, brand guidelines, color systems, and typography that make your brand instantly recognizable.</div></div>
@@ -1305,7 +1306,7 @@ function closeCatPage() {
 let currentItems = [], currentIndex = 0;
 function openLightbox(item) {
   document.getElementById('lightboxImg').src = item.dataset.img;
-  document.getElementById('lightboxCaption').textContent = item.dataset.name + ' — ' + item.dataset.client;
+  document.getElementById('lightboxCaption').textContent = item.dataset.name + ' | ' + item.dataset.client;
   document.getElementById('lightbox').classList.add('open');
 }
 function closeLightbox(e) { if (e.target === e.currentTarget) closeLightboxBtn(); }

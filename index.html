@@ -253,37 +253,6 @@
       background: radial-gradient(ellipse, rgba(124,58,237,0.5) 0%, transparent 70%);
       filter: blur(12px); z-index: -1;
     }
-    /* Floating stat cards */
-    .float-elem {
-      position: absolute; z-index: 5;
-      animation: floatElem 5s ease-in-out infinite;
-    }
-    .float-elem:nth-child(1) { top: 40px;  right: -50px;  animation-delay: 0s; }
-    .float-elem:nth-child(2) { top: 160px; left:  -60px;  animation-delay: 1.5s; }
-    .float-elem:nth-child(3) { bottom: 80px; right: -50px; animation-delay: 0.8s; }
-    .float-elem:nth-child(4) { bottom: 20px; left: -50px;  animation-delay: 2.2s; }
-    @keyframes floatElem {
-      0%,100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    .float-card {
-      padding: 10px 14px; border-radius: 12px;
-      background: rgba(13,13,26,0.88);
-      border: 1px solid rgba(168,85,247,0.35);
-      backdrop-filter: blur(16px);
-      font-size: 0.75rem; font-weight: 600;
-      color: var(--purple-light); white-space: nowrap;
-      box-shadow: 0 8px 24px rgba(124,58,237,0.2);
-      display: flex; align-items: center; gap: 8px;
-    }
-    .float-card-icon {
-      width: 28px; height: 28px; border-radius: 8px;
-      background: rgba(124,58,237,0.2);
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
-    }
-    .float-card-label { font-size: 0.6rem; color: var(--text-muted); display: block; }
-    .float-card-value { font-size: 0.78rem; color: var(--text); font-weight: 700; display: block; }
 
     /* ── SLIDING STRIP ───────────────────────────────── */
     .strip-section {
@@ -766,46 +735,10 @@
     <div class="design-asset-wrap">
       <div class="photo-frame">
         <img src="bobby-photo.jpeg" alt="Bobby Wijaya" />
-
-        <!-- Floating cards around photo -->
-        <div class="float-elem">
-          <div class="float-card">
-            <div class="float-card-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><polygon points="12,2 22,19 2,19" stroke="#a855f7" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </div>
-            <div><span class="float-card-label">Specialty</span><span class="float-card-value">Logo Design</span></div>
-          </div>
-        </div>
-
-        <div class="float-elem">
-          <div class="float-card">
-            <div class="float-card-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="8" height="8" rx="1.5" stroke="#a855f7" stroke-width="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5" stroke="#a855f7" stroke-width="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5" stroke="#a855f7" stroke-width="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5" stroke="#a855f7" stroke-width="1.5"/></svg>
-            </div>
-            <div><span class="float-card-label">Experience</span><span class="float-card-value">7+ Years</span></div>
-          </div>
-        </div>
-
-        <div class="float-elem">
-          <div class="float-card">
-            <div class="float-card-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" stroke="#a855f7" stroke-width="1.5" stroke-linejoin="round"/></svg>
-            </div>
-            <div><span class="float-card-label">Rating</span><span class="float-card-value">4.9 / 5.0</span></div>
-          </div>
-        </div>
-
-        <div class="float-elem">
-          <div class="float-card">
-            <div class="float-card-icon">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#a855f7" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div><span class="float-card-label">Projects</span><span class="float-card-value">500+ Done</span></div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
+</div>
 
   <!-- Draw hint -->
   <div class="draw-hint">
@@ -905,8 +838,8 @@
 
       <div class="folder-card reveal" data-cat="logo">
         <div class="folder-previews">
-          <img class="prev-img" src="logo-kelasaham.jpeg"/><img class="prev-img" src="logo-genesis.jpeg"/>
-          <img class="prev-img" src="logo-tappstr.jpeg"/><img class="prev-img" src="logo-lynns-playtime.jpeg"/>
+          <img class="prev-img" src="logo-acmhn.jpeg"/><img class="prev-img" src="logo-genesis.jpeg"/>
+          <img class="prev-img" src="logo-tappstr.jpeg"/><img class="prev-img" src="logo-motaero.jpeg"/>
         </div>
         <div class="folder-body"><div class="folder-tab"></div>
           <div class="folder-front">
@@ -920,8 +853,8 @@
 
       <div class="folder-card reveal" data-cat="brand">
         <div class="folder-previews">
-          <img class="prev-img" src="brand-3virgos1libra.jpeg"/><img class="prev-img" src="brand-bomboboy-about.jpeg"/>
-          <img class="prev-img" src="brand-vanguard.jpeg"/><img class="prev-img" src="brand-kanousei.jpeg"/>
+          <img class="prev-img" src="brand-3virgos1libra.jpeg"/><img class="prev-img" src="brand-bomboboy1.jpeg"/>
+          <img class="prev-img" src="brand-vanguard.jpeg"/><img class="prev-img" src="brand-tappstr.jpeg"/>
         </div>
         <div class="folder-body"><div class="folder-tab"></div>
           <div class="folder-front">
@@ -935,8 +868,8 @@
 
       <div class="folder-card reveal" data-cat="packaging">
         <div class="folder-previews">
-          <img class="prev-img" src="char-packaging-sugarpuff.jpeg"/><img class="prev-img" src="char-packaging-macaronkiss.jpeg"/>
-          <img class="prev-img" src="char-packaging-blushmacaron.jpeg"/>
+          <img class="prev-img" src="packaging-char1.jpeg"/><img class="prev-img" src="packaging-char2.jpeg"/>
+          <img class="prev-img" src="packaging-char3.jpeg"/><img class="prev-img" src="packaging-bomboboy.jpeg"/>
         </div>
         <div class="folder-body"><div class="folder-tab"></div>
           <div class="folder-front">
@@ -950,8 +883,8 @@
 
       <div class="folder-card reveal" data-cat="social">
         <div class="folder-previews">
-          <img class="prev-img" src="char-email-hero.jpeg"/><img class="prev-img" src="starlink-tiktok-viper.jpeg"/>
-          <img class="prev-img" src="social-tennis-fransisca.jpeg"/><img class="prev-img" src="social-hellosarnie.jpeg"/>
+          <img class="prev-img" src="social-char1.jpeg"/><img class="prev-img" src="social-tarlink1.jpeg"/>
+          <img class="prev-img" src="social-tennis1.jpeg"/><img class="prev-img" src="social-hellosarnie1.jpeg"/>
         </div>
         <div class="folder-body"><div class="folder-tab"></div>
           <div class="folder-front">
@@ -965,8 +898,8 @@
 
       <div class="folder-card reveal" data-cat="print">
         <div class="folder-previews">
-          <img class="prev-img" src="signpack-vehicle-wrap.jpeg"/><img class="prev-img" src="template-tikitalk.jpeg"/>
-          <img class="prev-img" src="template-tikitalk2.jpeg"/>
+          <img class="prev-img" src="print-eco-wrap.jpeg"/><img class="prev-img" src="print-bergeron.jpeg"/>
+          <img class="prev-img" src="print-tikitalk1.jpeg"/><img class="prev-img" src="print-toyota.jpeg"/>
         </div>
         <div class="folder-body"><div class="folder-tab"></div>
           <div class="folder-front">
@@ -1112,89 +1045,94 @@
 // ── PORTFOLIO DATA ─────────────────────────────────
 const portfolioData = {
   logo: [
-    {img:'logo-kelasaham.jpeg',name:'KelaSaham',client:'Stock Trading Platform'},
-    {img:'logo-kelasaham2.jpeg',name:'KelaSaham Mockups',client:'Brand Application'},
-    {img:'logo-genesis.jpeg',name:'Genesis Event Production',client:'Event Company'},
-    {img:'logo-tappstr.jpeg',name:'Tappstr',client:'Tech Startup'},
-    {img:'logo-lynns-playtime.jpeg',name:"Lynn's Play Time",client:'Kids Content Creator'},
-    {img:'logo-kangjono.jpeg',name:'Kang Jono',client:'F&B Es Coklat Bandung'},
-    {img:'logo-odyssey.jpeg',name:'Odyssey',client:'Youth Organization'},
+    {img:'logo-acmhn.jpeg',name:'ACMHN',client:'Healthcare Organization'},
     {img:'logo-akademifyp.jpeg',name:'Akademi FYP',client:'Education Platform'},
-    {img:'logo-steveboon.jpeg',name:'Steve Boon Photography',client:'Photography Brand'},
     {img:'logo-freshfood.jpeg',name:'Fresh Food G',client:'F&B Brand'},
-    {img:'logo-misc1.jpeg',name:'Logo Project',client:'Client Work'},
-    {img:'logo-misc2.jpeg',name:'Logo Project',client:'Client Work'},
+    {img:'logo-genesis.jpeg',name:'Genesis Event Production',client:'Event Company'},
+    {img:'logo-kangjono.jpeg',name:'Kang Jono',client:'F&B Brand'},
+    {img:'logo-lynns-playtime.jpeg',name:"Lynn's Play Time",client:'Kids Content Creator'},
+    {img:'logo-motaero.jpeg',name:'Motaero',client:'Automotive Brand'},
+    {img:'logo-motaero2.jpeg',name:'Motaero Variations',client:'Automotive Brand'},
+    {img:'logo-odyssey.jpeg',name:'Odyssey',client:'Youth Organization'},
+    {img:'logo-steveboon.jpeg',name:'Steve Boon Photography',client:'Photography Brand'},
+    {img:'logo-tappstr.jpeg',name:'TAPPSTR',client:'Tech Startup'},
   ],
   brand: [
     {img:'brand-3virgos1libra.jpeg',name:'3 Virgos 1 Libra',client:'Coffee Brand'},
-    {img:'brand-bomboboy-about.jpeg',name:'Bombo Boy',client:'F&B Donuts Brand'},
-    {img:'brand-bomboboy-colors.jpeg',name:'Bombo Boy Color System',client:'Brand Guidelines'},
-    {img:'brand-bomboboy-social.jpeg',name:'Bombo Boy Social Template',client:'F&B Brand'},
+    {img:'brand-bomboboy1.jpeg',name:'Bombo Boy Brand Guide',client:'F&B Donuts Brand'},
+    {img:'brand-bomboboy2.jpeg',name:'Bombo Boy Brand Guide 2',client:'F&B Donuts Brand'},
+    {img:'brand-bomboboy3.jpeg',name:'Bombo Boy Brand Guide 3',client:'F&B Donuts Brand'},
+    {img:'brand-bomboboy-social.jpeg',name:'Bombo Boy Social Templates',client:'F&B Donuts Brand'},
+    {img:'brand-genesis1.jpeg',name:'Genesis Brand Guide',client:'Event Company'},
+    {img:'brand-genesis2.jpeg',name:'Genesis Brand Guide 2',client:'Event Company'},
+    {img:'brand-kelasaham1.jpeg',name:'KelaSaham Brand Guide',client:'Stock Trading Platform'},
+    {img:'brand-kelasaham2.jpeg',name:'KelaSaham Brand Guide 2',client:'Stock Trading Platform'},
+    {img:'brand-kounesei.jpeg',name:'Kounesei Connect',client:'Tech Brand Identity'},
+    {img:'brand-tappstr.jpeg',name:'TAPPSTR Brand Guide',client:'Tech Startup'},
     {img:'brand-vanguard.jpeg',name:'Vanguard of Solidarity',client:'Organization Brand'},
-    {img:'brand-kanousei.jpeg',name:'Kanousei Connect',client:'Tech Brand Identity'},
-    {img:'brand-genesis2.jpeg',name:'Genesis Business Cards',client:'Event Company'},
-    {img:'brand-genesis3.jpeg',name:'Genesis Logo Variations',client:'Event Company'},
-    {img:'brand-genesis4.jpeg',name:'Genesis Color Palettes',client:'Event Company'},
   ],
   packaging: [
-    {img:'char-packaging-sugarpuff.jpeg',name:'Sugar Puff Lash Box',client:'Char. Cosmetics'},
-    {img:'char-packaging-macaronkiss.jpeg',name:'Macaron Kiss Lash Box',client:'Char. Cosmetics'},
-    {img:'char-packaging-blushmacaron.jpeg',name:'Blush Macaron Lash Box',client:'Char. Cosmetics'},
+    {img:'packaging-bomboboy.jpeg',name:'Bombo Boy Product Packaging',client:'Bombo Boy F&B'},
+    {img:'packaging-char1.jpeg',name:'Char. Lash Box',client:'Char. Cosmetics'},
+    {img:'packaging-char2.jpeg',name:'Char. Lash Box 2',client:'Char. Cosmetics'},
+    {img:'packaging-char3.jpeg',name:'Char. Lash Box 3',client:'Char. Cosmetics'},
   ],
   social: [
-    {img:'char-email-hero.jpeg',name:'Perfect Lashes Campaign',client:'Char. Cosmetics'},
-    {img:'char-email-lashes-1.jpeg',name:'Lashes Email Full',client:'Char. Cosmetics'},
-    {img:'char-banner-lashes-2.jpeg',name:'Lashes Banner',client:'Char. Cosmetics'},
-    {img:'char-email-perfect-lashes.jpeg',name:'Perfect Lashes Email',client:'Char. Cosmetics'},
-    {img:'char-email-review-save.jpeg',name:'Review & Save Email',client:'Char. Cosmetics'},
-    {img:'char-email-cart.jpeg',name:'Abandoned Cart Email',client:'Char. Cosmetics'},
-    {img:'char-email-discount.jpeg',name:'15% Off Exclusive',client:'Char. Cosmetics'},
-    {img:'char-clearance-sale.jpeg',name:'Clearance Sale Banner',client:'Char. Cosmetics'},
-    {img:'char-clearance-story.jpeg',name:'Clearance Story',client:'Char. Cosmetics'},
-    {img:'starlink-tiktok-panduan.jpeg',name:'Panduan TikTok',client:'Starlink Management'},
-    {img:'starlink-tiktok-barongsai.jpeg',name:'Barongsai Trivia',client:'Starlink Management'},
-    {img:'starlink-barongsai2.jpeg',name:'Tari Barongsai Cover',client:'Starlink Management'},
-    {img:'starlink-barongsai3.jpeg',name:'Tari Barongsai Content',client:'Starlink Management'},
-    {img:'starlink-tiktok-zelda.jpeg',name:'Zelda Trivia',client:'Starlink Management'},
-    {img:'starlink-zelda2.jpeg',name:'Zelda Lore Content',client:'Starlink Management'},
-    {img:'starlink-zelda3.jpeg',name:'Hidden Forest Content',client:'Starlink Management'},
-    {img:'starlink-tiktok-viper.jpeg',name:'Viper Trivia',client:'Starlink Management'},
-    {img:'starlink-viper2.jpeg',name:'Viper Lore Content',client:'Starlink Management'},
-    {img:'starlink-whattowatch.jpeg',name:'#WhatToWatch February',client:'Starlink Management'},
-    {img:'starlink-trending.jpeg',name:'Trending Videos',client:'Starlink Management'},
-    {img:'starlink-follow.jpeg',name:'Follow for Trivia',client:'Starlink Management'},
-    {img:'starlink-braga.jpeg',name:'#WhatToVisit Braga',client:'Starlink Management'},
-    {img:'starlink-lunar.jpeg',name:'Lucky Foods Lunar',client:'Starlink Management'},
-    {img:'social-genshin-local.jpeg',name:'Genshin Local Specialty',client:'Genshin Akun ID'},
-    {img:'social-genshin-spiral.jpeg',name:'Genshin Spiral Abyss',client:'Genshin Akun ID'},
-    {img:'social-genshin3.jpeg',name:'Genshin Ganyu x Cyno',client:'Genshin Akun ID'},
-    {img:'social-genshin4.jpeg',name:'Fleeting Colors in Flight',client:'Genshin Akun ID'},
-    {img:'social-raze.jpeg',name:'Raze Summer Starters',client:'Social Media'},
-    {img:'social-eggo.jpeg',name:'Eggo Bazaar Menu',client:'Eggo F&B'},
-    {img:'social-tennis-fransisca.jpeg',name:'Tournament Winner',client:'Tennis Event'},
-    {img:'social-tennis-usopen.jpeg',name:'US Open Shootout',client:'Everything Tennis'},
-    {img:'social-tennis-ladiesclinic.jpeg',name:'Ladies Clinic Tennis',client:'Everything Tennis'},
-    {img:'social-tennis-ladiesclinic2.jpeg',name:'Ladies Clinic Dark',client:'Everything Tennis'},
-    {img:'social-tennis-serving.jpeg',name:'Serving Master Class',client:'Strathfield Sports Club'},
-    {img:'social-tennis-cardio.jpeg',name:'Cardio Tennis',client:'Strathfield Sports Club'},
-    {img:'social-hellosarnie.jpeg',name:'Corporate Lunch Sorted',client:'Hello Sarnie'},
+    {img:'social-char1.jpeg',name:'Char. Social',client:'Char. Cosmetics'},
+    {img:'social-char2.jpeg',name:'Char. Social 2',client:'Char. Cosmetics'},
+    {img:'social-char3.jpeg',name:'Char. Social 3',client:'Char. Cosmetics'},
+    {img:'social-char4.jpeg',name:'Char. Social 4',client:'Char. Cosmetics'},
+    {img:'social-char5.jpeg',name:'Char. Social 5',client:'Char. Cosmetics'},
+    {img:'social-char6.jpeg',name:'Char. Social 6',client:'Char. Cosmetics'},
+    {img:'social-char7.jpeg',name:'Char. Social 7',client:'Char. Cosmetics'},
+    {img:'social-char8.jpeg',name:'Char. Social 8',client:'Char. Cosmetics'},
+    {img:'social-char-website.jpeg',name:'Char. Website Design',client:'Char. Cosmetics'},
+    {img:'social-eggo.jpeg',name:'Eggo Bazaar Social',client:'Eggo F&B'},
+    {img:'social-tennis1.jpeg',name:'Everything Tennis',client:'Everything Tennis'},
+    {img:'social-tennis2.jpeg',name:'Everything Tennis 2',client:'Everything Tennis'},
+    {img:'social-genshin1.jpeg',name:'Genshinakun Social',client:'Genshin Akun ID'},
+    {img:'social-genshin2.jpeg',name:'Genshinakun Social 2',client:'Genshin Akun ID'},
+    {img:'social-genshin3.jpeg',name:'Genshinakun Social 3',client:'Genshin Akun ID'},
     {img:'social-hella.jpeg',name:'Hella Storewide Sale',client:'Hella'},
-    {img:'social-misc1.jpeg',name:'Social Media Design',client:'Client Work'},
-    {img:'social-misc2.jpeg',name:'Social Media Design',client:'Client Work'},
-    {img:'social-misc3.jpeg',name:'Social Media Design',client:'Client Work'},
-    {img:'social-misc4.jpeg',name:'Social Media Design',client:'Client Work'},
+    {img:'social-hellosarnie1.jpeg',name:'Hello Sarnie Social',client:'Hello Sarnie'},
+    {img:'social-hellosarnie2.jpeg',name:'Hello Sarnie Social 2',client:'Hello Sarnie'},
+    {img:'social-raze.jpeg',name:'Raze Energy',client:'Raze Energy'},
+    {img:'social-strathfield1.jpeg',name:'Strathfield Sports',client:'Strathfield Sports Club'},
+    {img:'social-strathfield2.jpeg',name:'Strathfield Sports 2',client:'Strathfield Sports Club'},
+    {img:'social-strathfield3.jpeg',name:'Strathfield Sports 3',client:'Strathfield Sports Club'},
+    {img:'social-tarlink1.jpeg',name:'Tarlink Management',client:'Tarlink Management'},
+    {img:'social-tarlink2.jpeg',name:'Tarlink Management 2',client:'Tarlink Management'},
+    {img:'social-tarlink3.jpeg',name:'Tarlink Management 3',client:'Tarlink Management'},
+    {img:'social-tarlink4.jpeg',name:'Tarlink Management 4',client:'Tarlink Management'},
+    {img:'social-tarlink5.jpeg',name:'Tarlink Management 5',client:'Tarlink Management'},
+    {img:'social-tarlink6.jpeg',name:'Tarlink Management 6',client:'Tarlink Management'},
+    {img:'social-tarlink7.jpeg',name:'Tarlink Management 7',client:'Tarlink Management'},
+    {img:'social-tarlink8.jpeg',name:'Tarlink Management 8',client:'Tarlink Management'},
+    {img:'social-tarlink9.jpeg',name:'Tarlink Management 9',client:'Tarlink Management'},
+    {img:'social-tarlink10.jpeg',name:'Tarlink Management 10',client:'Tarlink Management'},
+    {img:'social-tarlink11.jpeg',name:'Tarlink Management 11',client:'Tarlink Management'},
+    {img:'social-tarlink12.jpeg',name:'Tarlink Management 12',client:'Tarlink Management'},
+    {img:'social-tarlink13.jpeg',name:'Tarlink Management 13',client:'Tarlink Management'},
+    {img:'social-tarlink14.jpeg',name:'Tarlink Management 14',client:'Tarlink Management'},
+    {img:'social-tarlink15.jpeg',name:'Tarlink Management 15',client:'Tarlink Management'},
+    {img:'social-tennis-event1.jpeg',name:'Tennis Event',client:'Tennis Event'},
+    {img:'social-tennis-event2.jpeg',name:'Tennis Event 2',client:'Tennis Event'},
+    {img:'social-tennis-event3.jpeg',name:'Tennis Event 3',client:'Tennis Event'},
   ],
   print: [
-    {img:'signpack-vehicle-wrap.jpeg',name:'Eco Friendly Van Wrap',client:'The Sign Pack'},
-    {img:'template-tikitalk.jpeg',name:'Tiki Talk Template v1',client:'Maker & Serum'},
-    {img:'template-tikitalk2.jpeg',name:'Tiki Talk Template v2',client:'Maker & Serum'},
-    {img:'template-tikitalk3.jpeg',name:'Tiki Talk Template v3',client:'Maker & Serum'},
-    {img:'print-misc1.jpeg',name:'Print Design',client:'Client Work'},
-    {img:'print-misc2.jpeg',name:'Print Design',client:'Client Work'},
-    {img:'print-misc3.jpeg',name:'Print Design',client:'Client Work'},
-    {img:'print-misc4.jpeg',name:'Print Design',client:'Client Work'},
-    {img:'print-misc5.jpeg',name:'Print Design',client:'Client Work'},
-    {img:'print-misc6.jpeg',name:'Print Design',client:'Client Work'},
+    {img:'print-bergeron.jpeg',name:'Bergeron Car Wrap',client:'The Sign Pack'},
+    {img:'print-eco-wrap.jpeg',name:'Eco Friendly Car Wrap',client:'The Sign Pack'},
+    {img:'print-genesis.jpeg',name:'Genesis Print',client:'Genesis Event Company'},
+    {img:'print-hallscreek.jpeg',name:'Halls Creek 4WD Wrap',client:'The Sign Pack'},
+    {img:'print-hunter.jpeg',name:'Hunter of Man Book Cover',client:'Publishing'},
+    {img:'print-pawsplace.jpeg',name:'Paws Place Car Wrap',client:'The Sign Pack'},
+    {img:'print-redhead.jpeg',name:'RedHead Realtor Wrap',client:'The Sign Pack'},
+    {img:'print-roccos1.jpeg',name:"Rocco's Car Wrap",client:'The Sign Pack'},
+    {img:'print-roccos2.jpeg',name:"Rocco's Car Wrap 2",client:'The Sign Pack'},
+    {img:'print-starmoving.jpeg',name:'Star Moving Solutions Wrap',client:'The Sign Pack'},
+    {img:'print-tikitalk1.jpeg',name:'Tiki Talk Podcast Banner',client:'Maker & Serum'},
+    {img:'print-tikitalk2.jpeg',name:'Tiki Talk Podcast Banner 2',client:'Maker & Serum'},
+    {img:'print-toyota.jpeg',name:'Toyota Genuine Parts Wrap',client:'The Sign Pack'},
   ]
 };
 
@@ -1222,13 +1160,13 @@ Object.entries(portfolioData).forEach(([cat, items]) => {
 
 // ── SLIDING STRIP ──────────────────────────────────
 const stripImages = [
-  'logo-kelasaham.jpeg','char-email-hero.jpeg','brand-3virgos1libra.jpeg',
-  'char-packaging-sugarpuff.jpeg','starlink-tiktok-viper.jpeg','logo-genesis.jpeg',
-  'social-tennis-fransisca.jpeg','brand-bomboboy-about.jpeg','logo-tappstr.jpeg',
-  'char-clearance-sale.jpeg','starlink-whattowatch.jpeg','social-hellosarnie.jpeg',
-  'brand-kanousei.jpeg','logo-lynns-playtime.jpeg','social-tennis-usopen.jpeg',
-  'char-email-discount.jpeg','brand-vanguard.jpeg','signpack-vehicle-wrap.jpeg',
-  'logo-odyssey.jpeg','social-genshin-local.jpeg',
+  'logo-acmhn.jpeg','brand-3virgos1libra.jpeg','packaging-char1.jpeg',
+  'social-char1.jpeg','print-eco-wrap.jpeg','logo-tappstr.jpeg',
+  'social-tarlink1.jpeg','brand-bomboboy1.jpeg','packaging-bomboboy.jpeg',
+  'social-tennis1.jpeg','print-bergeron.jpeg','logo-motaero.jpeg',
+  'social-hellosarnie1.jpeg','brand-kelasaham1.jpeg','print-tikitalk1.jpeg',
+  'social-genshin1.jpeg','brand-kounesei.jpeg','social-raze.jpeg',
+  'logo-genesis.jpeg','social-hella.jpeg',
 ];
 const track = document.getElementById('stripTrack');
 // Duplicate for seamless loop
